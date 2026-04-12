@@ -42,7 +42,32 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/academics', academicRoutes);
 app.use('/api/certifications', certRoutes);
 app.use('/api/participations', participationRoutes);
-app.use('/api/health', (req, res) => res.status(200).json({ status: 'up', timestamp: new Date() }));
+app.use('/api/health', (req, res) => {
+  const memoryUsage = process.memoryUsage();
+  res.status(200).json({ 
+    status: 'up', 
+    uptime: process.uptime(),
+    timestamp: new Date(),
+    serviceInfo: {
+      nodeVersion: process.version,
+      platform: process.platform,
+      memory: {
+        rss: `${Math.round(memoryUsage.rss / 1024 / 1024)} MB`,
+        heapTotal: `${Math.round(memoryUsage.heapTotal / 1024 / 1024)} MB`,
+        heapUsed: `${Math.round(memoryUsage.heapUsed / 1024 / 1024)} MB`,
+      }
+    },
+    systemStats: {
+      cpuLoad: require('os').loadavg(),
+      totalMemory: `${Math.round(require('os').totalmem() / 1024 / 1024)} MB`,
+      freeMemory: `${Math.round(require('os').freemem() / 1024 / 1024)} MB`,
+    },
+    database: {
+      connected: mongoose.connection.readyState === 1 ? 'Yes' : 'No',
+      name: mongoose.connection.name
+    }
+  });
+});
 app.use('/api/events', eventRoutes);
 app.use('/api/profile', profileRoutes);
 app.use('/api/admin', adminRoutes);
