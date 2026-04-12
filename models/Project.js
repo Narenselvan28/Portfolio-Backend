@@ -5,7 +5,7 @@ const projectSchema = new mongoose.Schema({
   description: { type: String, required: true },
   longDescription: { type: String },
   techStack: [String],
-  domain: { type: String, enum: ['Web', 'ML', 'IoT', 'Full Stack', 'Frontend', 'Tools', 'Foundational', 'ML + IoT'] },
+  domain: { type: String, default: 'Other' },
   presentedAt: String,
   isCompetition: { type: Boolean, default: false },
   result: String,

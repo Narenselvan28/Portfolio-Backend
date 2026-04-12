@@ -10,8 +10,10 @@ dotenv.config();
 const app = express();
 
 // Security Hardening
+app.set('trust proxy', 1); // Trust the first proxy (Render)
 app.use(helmet()); 
 app.disable('x-powered-by');
+app.use(cors()); // Moved up for preflight reliability
 
 // Rate Limiting: 100 requests per 15 minutes
 const limiter = rateLimit({
@@ -21,8 +23,6 @@ const limiter = rateLimit({
 });
 app.use('/api/', limiter);
 
-// Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes Placeholder

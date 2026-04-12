@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Create (Admin only)
+// Create
 router.post('/', async (req, res) => {
   const academic = new Academic(req.body);
   try {
@@ -20,6 +20,26 @@ router.post('/', async (req, res) => {
     res.status(201).json(newAcademic);
   } catch (err) {
     res.status(400).json({ message: err.message });
+  }
+});
+
+// Update
+router.patch('/:id', async (req, res) => {
+  try {
+    const academic = await Academic.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.json(academic);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+});
+
+// Delete
+router.delete('/:id', async (req, res) => {
+  try {
+    await Academic.findByIdAndDelete(req.params.id);
+    res.json({ message: 'Academic record deleted' });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 
