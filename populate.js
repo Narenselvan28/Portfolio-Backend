@@ -37,7 +37,7 @@ const data = {
       techStack: ["MongoDB", "Express", "React", "Node.js", "Cloudinary"],
       domain: "Full Stack",
       images: ["/assets/proofs/1000131321 (1)_page-0007.jpg"],
-      priorityOverride: 110
+      priorityOverride: 20
     },
     {
       title: "SpectraLabs",
@@ -45,7 +45,7 @@ const data = {
       techStack: ["Full Stack", "Scalable Solutions", "Brand Development"],
       domain: "Full Stack",
       images: ["/assets/proofs/1000131321 (1)_page-0012.jpg"],
-      priorityOverride: 105
+      priorityOverride: 100
     },
     {
       title: "Cattle Health Monitoring System",
@@ -53,7 +53,7 @@ const data = {
       techStack: ["ESP32", "Random Forest", "IoT", "ML"],
       domain: "ML + IoT",
       images: ["/assets/proofs/1000131321 (1)_page-0005.jpg"],
-      priorityOverride: 100
+      priorityOverride: 80
     },
 
     {
@@ -69,7 +69,7 @@ const data = {
       description: "Worked as an Individual Freelance Full-Stack Developer by developing a billing platform for a flower distribution business, focused on invoice generation, sales management, and streamlined business operations.",
       techStack: ["Full Stack", "Invoicing", "Sales Management"],
       domain: "Full Stack",
-      priorityOverride: 88
+      priorityOverride: 50
     },
 
     {
@@ -78,14 +78,14 @@ const data = {
       techStack: ["Web", "Social Impact", "Rescue Coordination"],
       domain: "Full Stack",
       images: ["/assets/proofs/1000131321 (1)_page-0010.jpg"],
-      priorityOverride: 80
+      priorityOverride: 40
     },
     {
       title: "Line Follower Robot",
       description: "An autonomous robot built using IR sensors to detect and follow a predefined path. The project demonstrates foundational concepts in embedded systems, real-time control, and hardware-software integration.",
       techStack: ["Arduino", "IR Sensors", "Embedded C"],
       domain: "IoT",
-      priorityOverride: 55
+      priorityOverride: 10
     },
 
     {
@@ -96,56 +96,56 @@ const data = {
       presentedAt: "ReArm Technologies",
       outcome: "Startup Initiative",
       isCompetition: false,
-      priorityOverride: 83
+      priorityOverride: 130
     },
     {
       title: "VITAL SYNC — AI-Powered Multimodal Health Monitoring",
       description: "VITAL SYNC is an AI-powered multimodal health-monitoring system designed to identify potentially abnormal patterns by analysing physiological measurements, activity data, and environmental conditions. Its ML architecture incorporates domain-specific XGBoost classifiers alongside an Isolation Forest anomaly-detection model across seven risk-detection domains: heart-rate anomalies, oxygenation anomalies, respiratory risk, heat stress, environmental exposure, activity-related strain, and general physiological anomalies. The system emphasises lightweight inference and edge deployment, with the Raspberry Pi 4 as the target platform, reducing dependence on continuous internet connectivity.",
       techStack: ["Python", "XGBoost", "Scikit-learn", "Isolation Forest", "NumPy", "Raspberry Pi 4", "IoT Sensors"],
       domain: "Edge AI + Health Analytics",
-      priorityOverride: 79
+      priorityOverride: 150
     },
     {
       title: "Assessment Intelligence System — AI-Assisted Evaluation",
       description: "The Assessment Intelligence System is an AI-assisted assignment evaluation solution designed to improve the efficiency, consistency, and transparency of evaluating descriptive student answers. The system follows a hybrid rubric-first approach combining semantic understanding with deterministic scoring rules. A sentence-embedding model (all-MiniLM-L6-v2) compares the meaning of student responses with expected answers or rubric evidence, while a separate scoring layer applies predefined criteria and partial-credit rules. The architecture is designed to provide explainable evaluation by associating scoring decisions with relevant evidence, supporting human review rather than treating AI judgement as unquestionable. Developed for HackWithAMYPO — Finalist.",
       techStack: ["Python", "Sentence Transformers", "all-MiniLM-L6-v2", "PyTorch", "Scikit-learn", "PostgreSQL"],
       domain: "Educational AI + NLP",
-      priorityOverride: 77
+      priorityOverride: 140
     },
     {
       title: "DealFlow360 — ML-Powered Business Intelligence",
       description: "DealFlow360 is a machine learning-powered business intelligence solution designed to transform raw business data into actionable insights. The project analyses historical data, identifies meaningful patterns, and applies predictive models to support business decision-making. The ML component supports classification and regression tasks, while a FastAPI layer provides application access to model predictions. A MySQL-based search demonstration supports structured data retrieval for relevant business information. Developed for the Odoo Hackathon, Gujarat.",
       techStack: ["Python", "Scikit-learn", "FastAPI", "MySQL", "Pandas", "NumPy"],
       domain: "Machine Learning + Business Intelligence",
-      priorityOverride: 75
+      priorityOverride: 110
     },
     {
       title: "ReFlow — Intelligent Production Scheduling",
       description: "ReFlow is an intelligent production scheduling system designed to optimise manufacturing operations under uncertain and changing conditions. The system considers machine availability, processing times, setup times, order priorities, delivery deadlines, workforce availability, material constraints, downtime, and production costs. Its architecture combines a React-based frontend, a Python Flask backend, and MongoDB for data management. Machine learning approaches including XGBoost and Temporal Fusion Transformer (TFT) were explored for predictive components supporting the scheduling workflow. Developed for the KPR College Hackathon.",
       techStack: ["React.js", "Python", "Flask", "MongoDB Atlas", "XGBoost", "Temporal Fusion Transformer"],
       domain: "Industrial AI + Operations Research",
-      priorityOverride: 73
+      priorityOverride: 120
     },
     {
       title: "Research Paper Alignment System — Local AI Document Analysis",
       description: "The Research Paper Alignment System is an AI-assisted document analysis concept designed to evaluate how closely a research paper aligns with predefined requirements, research objectives, or evaluation criteria. The system explores local language models and semantic analysis to understand document content, compare relevant passages against evaluation criteria, and organise findings into a structured review. A local-inference approach reduces reliance on external AI APIs and keeps document processing within the user's own computing environment. Developed for the HackAce Online Hackathon.",
       techStack: ["Python", "Natural Language Processing", "Local LLMs", "Semantic Search", "Document Processing"],
       domain: "NLP + Document Intelligence",
-      priorityOverride: 71
+      priorityOverride: 30
     },
     {
       title: "Medical Vending Kiosk — Assisted Healthcare Access",
       description: "The Medical Vending Kiosk is an assisted healthcare kiosk concept designed to make basic health measurements and health-related guidance more accessible through an integrated electronic system. The project combines embedded hardware, sensors, a user interface, and automated control into a kiosk that guides users through a basic health-information workflow. Following a doctor-in-the-loop approach, the system provides basic measurements and general guidance while escalating potentially concerning situations to a healthcare professional. Features include RFID-based user identification, web-based monitoring, and controlled dispensing mechanisms. Developed for the Nehru College Hackathon.",
       techStack: ["ESP32", "ESP8266", "ESP32-CAM", "IoT Sensors", "RFID", "Embedded C/C++", "Web Dashboard"],
       domain: "Healthcare IoT + Embedded Systems",
-      priorityOverride: 69
+      priorityOverride: 70
     },
     {
       title: "Certify — Bulk Certificate Generator",
       description: "Certify is a minimal, client-side bulk certificate generator designed to simplify the creation of participation and achievement certificates for college events. Built for SPECTRUM Association, it allows users to work with certificate templates and structured recipient data directly in the browser — no backend server required. The client-side architecture enables deployment as a static website including on GitHub Pages. Key features include bulk certificate generation, CSV-based recipient data, personalised fields, PDF generation, and bulk ZIP export.",
       techStack: ["JavaScript", "HTML", "CSS", "Client-Side Processing", "PDF Generation", "CSV Processing"],
       domain: "Frontend Engineering + Workflow Automation",
-      priorityOverride: 66
+      priorityOverride: 60
     }
   ],
   events: [
