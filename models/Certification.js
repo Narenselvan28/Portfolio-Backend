@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const certificationSchema = new mongoose.Schema({
   title: { type: String, required: true },
   issuer: { type: String, required: true },
-  category: { type: String, enum: ['Web', 'ML', 'IoT', 'Tools', 'Backend'] },
+  category: { type: String, enum: ['Web', 'ML', 'IoT', 'Tools', 'Backend', 'Languages', 'Core', 'Business'] },
   date: { type: Date },
   skills: [String],
   takeaway: String,
