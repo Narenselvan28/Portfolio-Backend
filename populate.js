@@ -77,13 +77,7 @@ const data = {
       domain: "Full Stack",
       priorityOverride: 88
     },
-    {
-      title: "PaaS-based Temporary Hosting Platform",
-      description: "Currently developing a PaaS-based Temporary Hosting Platform utilizing Cloudflare Tunnel technology to simplify secure deployment and remote accessibility for developers and testing environments.",
-      techStack: ["Cloudflare", "PaaS", "Infrastructure"],
-      domain: "DevOps",
-      priorityOverride: 86
-    },
+
     {
       title: "PawBridge",
       description: "A platform aimed at connecting pets with potential adopters, creating a bridge between animals and caring homes. Designed with a user-friendly interface, it focuses on accessibility, emotional engagement, and simplifying the adoption process.",
@@ -99,18 +93,15 @@ const data = {
       domain: "IoT",
       priorityOverride: 55
     },
-    {
-      title: "Obstacle Avoidance Robot",
-      description: "A robotic system capable of detecting obstacles using ultrasonic sensors and navigating around them autonomously, showcasing dynamic decision-making and sensor integration.",
-      techStack: ["Arduino", "Ultrasonic Sensor", "Robotics"],
-      domain: "IoT",
-      priorityOverride: 50
-    },
+
     {
       title: "ReArm One — AI-Powered Modular Occupational Prosthetic",
       description: "ReArm One is an AI-powered modular occupational prosthetic platform concept developed under ReArm Technologies. The proposed control architecture combines electroencephalography (EEG) for higher-level intent recognition with surface electromyography (sEMG) for muscle-driven control and movement estimation. Envisioned as a modular platform, interchangeable attachments could support specific tasks such as precision gripping, tool operation, or industrial component handling. The long-term goal is to explore an adaptable assistive platform combining signal processing, embedded intelligence, mechanical design, and modular end-effectors for rehabilitation and industrial assistance.",
       techStack: ["EEG", "sEMG", "Signal Processing", "Machine Learning", "Embedded Systems", "Robotics", "Mechanical Design"],
       domain: "Assistive Robotics",
+      presentedAt: "ReArm Technologies",
+      outcome: "Startup Initiative",
+      isCompetition: false,
       priorityOverride: 83
     },
     {
