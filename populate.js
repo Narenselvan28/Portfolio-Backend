@@ -55,13 +55,7 @@ const data = {
       images: ["/assets/proofs/1000131321 (1)_page-0005.jpg"],
       priorityOverride: 100
     },
-    {
-      title: "Alumni Management Platform (SIH 2025)",
-      description: "A centralized digital platform built to connect alumni, students, and coordinators through a unified ecosystem. Features include mentor matching, real-time chat, event management, and a social feed, all designed to strengthen engagement and career guidance within institutions.",
-      techStack: ["React", "AI Matching", "Firebase", "Real-time Chat"],
-      domain: "Full Stack",
-      priorityOverride: 95
-    },
+
     {
       title: "EMS Cocos ERP",
       description: "A comprehensive ERP system focused on streamlining business operations through modular and scalable architecture. It includes features for workflow management, user roles, and an improved UI/UX, designed to enhance efficiency and adaptability for growing organizations.",
